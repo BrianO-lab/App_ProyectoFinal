@@ -27,7 +27,7 @@ const ImageSelector = (props) => {
 
     const image = await ImagePicker.launchCameraAsync({
       allowsEditing: true,
-      aspect: [16, 9],
+      aspect: [9, 16],
       quality: 0.8,
     });
     setPickedUri(image.assets[0].uri);
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   preview: {
     width: "100%",
-    height: 200,
+    height: 400,
     marginBottom: 10,
     justifyContent: "center",
     alignItems: "center",
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   image: {
-    width: "100%",
-    height: "100%",
+    width: "70%",
+    height: "70%",
   },
 });

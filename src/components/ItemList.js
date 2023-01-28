@@ -13,7 +13,7 @@ const ItemList = () => {
       />
       <View style={styles.info}>
         <Text style={styles.title}>text 1</Text>
-        <Text style={styles.address}>text 2</Text>
+        <Text style={styles.editorial}>text 2</Text>
       </View>
     </TouchableOpacity>
   );
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 6,
   },
-  address: {
+  editorial: {
     color: "#777",
     fontSize: 16,
   },

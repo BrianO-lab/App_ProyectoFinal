@@ -19,24 +19,34 @@ const NewPostScreen = () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.label}>Titulo</Text>
+        <Text style={styles.label}>Nombre del libro</Text>
         <TextInput
           style={styles.input}
           value={title}
           onChangeText={handleTitleChange}
         />
         <ImageSelector onImage={setImage} />
-
-        {/* <Button
-          title="Grabar direccion"
-          color={COLORS.MAROON}
-          onPress={handleSave}
-        /> */}
       </View>
     </ScrollView>
   );
 };
 
-export default NewPostScreen;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    margin: 30,
+  },
+  label: {
+    fontSize: 18,
+    marginBottom: 16,
+  },
+  input: {
+    borderBottomColor: "#ccc",
+    borderBottomWidth: 1,
+    marginBottom: 16,
+    paddingHorizontal: 2,
+    paddingVertical: 4,
+  },
+});
 
-const styles = StyleSheet.create({});
+export default NewPostScreen;
